@@ -32,24 +32,9 @@ Failure / Anomaly Detection
 Maintenance Alert
 ```
 
-## Implemented
+## Project Status
 
-* Synthetic IoT sensor data generation
-* Machine sensor data preprocessing
-* Project environment and dependency setup
-* Git-based project version control
-
-## Planned Features
-
-* [ ] Exploratory data analysis and visualization
-* [ ] Feature engineering
-* [ ] Machine learning-based failure/anomaly detection
-* [ ] MQTT-based real-time sensor communication
-* [ ] Real-time inference pipeline
-* [ ] FastAPI prediction service
-* [ ] Model evaluation and performance monitoring
-* [ ] Edge-oriented model deployment
-* [ ] Integration with real IoT sensors
+The project is being developed incrementally, starting with synthetic IoT sensor data generation and progressing toward machine learning-based predictive maintenance and edge inference.
 
 ## Sensors
 
@@ -69,9 +54,9 @@ These sensor measurements are used to identify abnormal operating conditions and
 | Programming      | Python                    |
 | Data Processing  | Pandas, NumPy             |
 | Machine Learning | Scikit-learn              |
-| Communication    | MQTT *(Planned)*          |
-| API              | FastAPI *(Planned)*       |
-| Database         | SQLite *(Planned)*        |
+| Communication    | MQTT                      |
+| API              | FastAPI                   |
+| Database         | SQLite                    |
 | Visualization    | Matplotlib                |
 | Model Management | Joblib                    |
 | Development      | VS Code, Jupyter Notebook |
@@ -79,7 +64,7 @@ These sensor measurements are used to identify abnormal operating conditions and
 
 ## Machine Learning
 
-The planned machine learning pipeline will include:
+The machine learning pipeline includes:
 
 1. Data collection
 2. Data cleaning and preprocessing
@@ -115,50 +100,9 @@ edge-ai-predictive-maintenance/
 └── README.md
 ```
 
-## Getting Started
+## Machine Learning Evaluation
 
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/abbymike/edge-ai-predictive-maintenance.git
-cd edge-ai-predictive-maintenance
-```
-
-### 2. Create a virtual environment
-
-```bash
-python3 -m venv venv
-```
-
-### 3. Activate the environment
-
-On macOS/Linux:
-
-```bash
-source venv/bin/activate
-```
-
-### 4. Install dependencies
-
-```bash
-pip install -r requirements.txt
-```
-
-### 5. Generate sensor data
-
-```bash
-python src/data_generator.py
-```
-
-The generated dataset is stored in:
-
-```text
-data/raw/sensor_data.csv
-```
-
-## Planned Machine Learning Evaluation
-
-The machine learning component will be evaluated using appropriate classification or anomaly-detection metrics, depending on the final modeling approach.
+The machine learning component will be evaluated using appropriate classification or anomaly-detection metrics depending on the final modeling approach.
 
 Potential metrics include:
 
@@ -173,28 +117,26 @@ For predictive maintenance, particular attention will be given to **recall and f
 
 ## Edge AI
 
-The project is designed with an edge-oriented architecture where machine learning inference can be performed close to the source of sensor data.
+The project uses an edge-oriented architecture where machine learning inference can be performed close to the source of sensor data.
 
-The planned edge implementation will explore:
+The system focuses on:
 
 * Low-latency inference
 * Reduced data transmission
 * Reduced dependency on cloud processing
 * Model optimization for edge environments
-* ONNX or other hardware-optimized inference approaches
+* Efficient machine learning inference
 
 ## Future Enhancements
 
-* Integrate real IoT sensors
-* Implement MQTT-based real-time communication
-* Use real-world predictive maintenance datasets
-* Improve failure prediction and anomaly detection
-* Add Remaining Useful Life (RUL) prediction
-* Deploy the model on edge hardware
-* Optimize the model for low-latency inference
-* Add monitoring and automated model evaluation
-* Containerize the application using Docker
-* Expand the API and monitoring capabilities
+* Integration with real IoT sensors
+* Real-time MQTT communication
+* Real-world predictive maintenance datasets
+* Remaining Useful Life (RUL) prediction
+* Edge hardware deployment
+* Model optimization
+* Monitoring and automated model evaluation
+* Docker-based deployment
 
 ## Disclaimer
 
@@ -205,5 +147,7 @@ The initial sensor data used in this project is simulated for development and ex
 **Abinaya Mahendran**
 
 Data Scientist | AI/ML Engineer
+
+GitHub: https://github.com/abiradhakrish
 
 
